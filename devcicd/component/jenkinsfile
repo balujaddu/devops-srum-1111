@@ -20,4 +20,6 @@ pipeline {
       steps {
         echo("Deploy the build")
       }
+     }
+     }
 }

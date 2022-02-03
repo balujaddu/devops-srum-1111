@@ -1,1 +1,23 @@
-
+pipeline {
+  agent any
+    stages {
+      stage("checkout") {
+        steps {
+          echo("Cloning the code")
+        }
+      }
+      stage("Build") {
+        steps {
+          echo("Build the code")
+        }
+      }
+      stage("Test") {
+        steps {
+          echo("Test the code")
+      }
+    }
+    stage("Deploy") {
+      steps {
+        echo("Deploy the build")
+      }
+}
